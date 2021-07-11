@@ -1,38 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
 .App {
+  background-image: linear-gradient(to right bottom, #13547a, #80d0c7);
+  padding: 44px 5px;
+}
+.App_dark {
+  background-color: #111111;
+  padding: 44px 5px;
+}
+
+.app_content {
+  height: 100%;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+/*------------------------sidebar------------------*/
+
+.sidebar_dark {
+  background-color: black;
+  color: white;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(26, 25, 25);
+  height: 100%;
+}
+.sidebar {
+  background-color: white;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(26, 25, 25);
+  height: 100%;
+}
+.sidebar_left {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar_left img {
+  width: 180px;
+  border-radius: 50%;
+  border: 4px solid #13547a;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar_left .title {
+  padding: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.heading {
+  width: 100%;
+  background: #e6e6e6;
+  border-radius: 15px;
+}
+.heading_dark {
+  width: 100%;
+  background: #111111;
+  border-radius: 15px;
+}
+.heading Button {
+  width: 100%;
+}
+.heading_dark Button {
+  width: 100%;
+  color: white;
+}
+.resume {
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px 0;
+}
+.resume_dark {
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px 0;
+}
+.resume Button {
+  width: 100%;
   align-items: center;
+  padding: 10px 0;
+}
+.resume_dark Button {
+  width: 100%;
+  color: white;
+  align-items: center;
+  padding: 10px 0;
+}
+.resume .icon {
+  color: #13547a;
+}
+.resume_dark .icon {
+  color: #13547a;
+}
+.resume .MuiButton-root:hover {
+  color: #13547a;
+}
+.resume_dark .MuiButton-root:hover {
+  color: #13547a;
+}
+.d-flex {
+  display: flex;
+}
+.social_icons {
+  padding: 0;
+}
+.social_icons .icon {
+  color: #13547a;
+  font-size: 35px;
+}
+.info {
+  background-color: #e6e6e6;
+  margin: 10px -20px;
+  padding: 10px 0;
+}
+.info a{
+  color: black;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.info_dark a{
+  color: white;
+}
+.info_dark {
+  background-color: #111111;
+  margin: 10px -20px;
+  padding: 10px 0;
+}
+.info Button {
+  width: 100%;
+}
+.info_dark Button {
+  width: 100%;
+  color: white;
+}
+.info .icon {
+  padding: 0 5px;
+  color: #13547a;
+}
+.info_dark .icon {
+  padding: 0 5px;
+  color: #13547a;
+}
+.ui_button {
+  width: 100%;
+  border: 1px solid #13547a;
+  border-radius: 25px;
+}
+.dark_button {
+  width: 100%;
+  border: 1px solid #13547a;
+  border-radius: 25px;
+}
+.ui_button Button {
+  width: 100%;
+}
+.dark_button Button {
+  width: 100%;
+  color: white;
+}
+.heading .MuiButton-root:hover {
+  border-radius: 50px;
+}
+.resume .MuiButton-root:hover {
+  border-radius: 50px;
+}
+.heading_dark .MuiButton-root:hover {
+  border-radius: 50px;
+}
+.resume_dark .MuiButton-root:hover {
+  border-radius: 50px;
+}
+.hire_button {
+  width: 100%;
+  background-image: linear-gradient(to right bottom, #13547a, #80d0c7);
+  border-radius: 25px;
+  margin-top: 10px;
+  border: 1px solid #80d0c7;
+}
+.hire_button Button {
+  width: 100%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/*----------------------------main----------------------*/
+.main {
+  background-color: white;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(26, 25, 25);
+  height: 93.5vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*--------------------------navbar-------------------------------*/
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+}
+.navbar_items {
+  display: flex;
+}
+.navbar_active {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: black;
+  border-bottom: 4px solid #13547a;
+}
+.navbar_item {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.navbar .MuiButton-root {
+  border-radius: 0;
+  font-size: 17px;
+}
+.navbar .MuiButton-root:hover {
+  color: #13547a;
 }
