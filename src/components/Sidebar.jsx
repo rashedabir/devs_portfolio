@@ -90,7 +90,7 @@ function Sidebar({ dark, setDark }) {
           </a>
         </Button>
         <Button>
-          <RoomIcon className="icon" /> <h4>Cumilla, Bangladesh</h4>
+          <RoomIcon className="icon" /> <h4>Comilla, Bangladesh</h4>
         </Button>
         <Button>
           <EmailIcon className="icon" /> <h4>rashedabir.cse@gmail.com</h4>

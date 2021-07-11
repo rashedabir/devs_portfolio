@@ -2,7 +2,7 @@ import { Button } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ dark }) {
   const [active, setActive] = useState("");
 
   useEffect(() => {
@@ -17,13 +17,15 @@ function Navbar() {
   }, [active]);
 
   return (
-    <div className="navbar">
-      <div className="navbar_active">{active}</div>
+    <div className={dark ? "navbar_dark" : "navbar"}>
+      <div className={dark ? "navbar_active_dark" : "navbar_active"}>
+        {active}
+      </div>
       <div className="navbar_items">
         {active !== "About" && (
           <Link to="/">
             <Button
-              className="navbar_item"
+              className={dark ? "navbar_item_dark" : "navbar_item"}
               onClick={() => {
                 setActive("About");
               }}
@@ -35,7 +37,7 @@ function Navbar() {
         {active !== "Resume" ? (
           <Link to="/resume">
             <Button
-              className="navbar_item"
+              className={dark ? "navbar_item_dark" : "navbar_item"}
               onClick={() => {
                 setActive("Resume");
               }}
@@ -48,7 +50,7 @@ function Navbar() {
         {active !== "Projects" && (
           <Link to="projects">
             <Button
-              className="navbar_item"
+              className={dark ? "navbar_item_dark" : "navbar_item"}
               onClick={() => {
                 setActive("Projects");
               }}

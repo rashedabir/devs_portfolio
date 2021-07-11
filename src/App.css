@@ -5,17 +5,17 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-a{
+a {
   text-decoration: none;
 }
 
 .App {
   background-image: linear-gradient(to right bottom, #13547a, #80d0c7);
-  padding: 44px 5px;
+  padding: 46px 10px;
 }
 .App_dark {
   background-color: #111111;
-  padding: 44px 5px;
+  padding: 46px 10px;
 }
 
 .app_content {
@@ -117,12 +117,12 @@ a{
   margin: 10px -20px;
   padding: 10px 0;
 }
-.info a{
+.info a {
   color: black;
   width: 100%;
   justify-content: center;
 }
-.info_dark a{
+.info_dark a {
   color: white;
 }
 .info_dark {
@@ -158,6 +158,12 @@ a{
 .ui_button Button {
   width: 100%;
 }
+.ui_button .MuiButton-root:hover{
+  border-radius: 50px;
+}
+.dark_button .MuiButton-root:hover{
+  border-radius: 50px;
+}
 .dark_button Button {
   width: 100%;
   color: white;
@@ -179,11 +185,13 @@ a{
   background-image: linear-gradient(to right bottom, #13547a, #80d0c7);
   border-radius: 25px;
   margin-top: 10px;
-  border: 1px solid #80d0c7;
 }
 .hire_button Button {
   width: 100%;
   color: white;
+}
+.hire_button .MuiButton-root:hover{
+  border-radius: 50px;
 }
 
 /*----------------------------main----------------------*/
@@ -192,13 +200,28 @@ a{
   height: 100%;
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(26, 25, 25);
-  height: 93.5vh;
+  height: 93.1vh;
+}
+.main_dark {
+  background-color: black;
+  color: white;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(26, 25, 25);
+  height: 93.1vh;
 }
 
 /*--------------------------navbar-------------------------------*/
 
 .navbar {
   background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+}
+.navbar_dark {
+  background-color: black;
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
@@ -213,6 +236,12 @@ a{
   color: black;
   border-bottom: 4px solid #13547a;
 }
+.navbar_active_dark {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  border-bottom: 4px solid #13547a;
+}
 .navbar_item {
   margin-right: 20px;
   text-decoration: none;
@@ -220,10 +249,75 @@ a{
   font-size: 1.3rem;
   cursor: pointer;
 }
+.navbar_item_dark {
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
 .navbar .MuiButton-root {
   border-radius: 0;
   font-size: 17px;
 }
+.navbar_dark .MuiButton-root {
+  border-radius: 0;
+  font-size: 17px;
+  color: white;
+}
 .navbar .MuiButton-root:hover {
   color: #13547a;
+}
+.navbar_dark .MuiButton-root:hover {
+  color: #13547a;
+}
+
+/*------------------------------------about-----------------------------------*/
+
+.about_intro {
+  overflow-y: auto;
+  height: 88%;
+}
+.about_intro h4 {
+  padding: 20px 0;
+}
+.about_service {
+  background-color: #e6e6e6;
+  padding: 15px 0px;
+  margin: 20px 0;
+  margin-top: 30px;
+}
+.about_service_dark {
+  background-color: #111111;
+  padding: 15px 0px;
+  margin: 20px 0;
+  margin-top: 30px;
+}
+.about_title {
+  padding: 0 20px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.service {
+  padding: 15px;
+  gap: 25px;
+}
+.service_card {
+  display: flex;
+}
+.service_card_dark {
+  display: flex;
+  background-color: black;
+  color: white;
+  border-radius: 0px;
+}
+.service_card img {
+  width: 40px;
+  height: 100%;
+  padding-right: 10px;
+}
+.service_card_dark img {
+  width: 40px;
+  height: 100%;
+  padding-right: 10px;
 }

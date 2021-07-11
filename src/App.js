@@ -25,12 +25,18 @@ function App() {
             >
               <Sidebar dark={dark} setDark={setDark} />
             </Grid>
-            <Grid item xs className="main">
-              <Navbar />
+            <Grid item xs className={dark ? "main_dark" : "main"}>
+              <Navbar dark={dark} />
               <Switch>
-                <Route exact path="/" component={About} />
-                <Route exact path="/resume" component={Resume} />
-                <Route exact path="/projects" component={Project} />
+                <Route exact path="/">
+                  <About dark={dark} />
+                </Route>
+                <Route exact path="/resume">
+                  <Resume />
+                </Route>
+                <Route exact path="/projects">
+                  <Project />
+                </Route>
               </Switch>
             </Grid>
           </Grid>
