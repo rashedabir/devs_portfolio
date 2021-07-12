@@ -37,7 +37,7 @@ function About({dark}) {
       title: "API Development",
       about: [
         "I can Develop robust REST API using",
-        <strong key={1}> ExpressJS-Rest-API </strong>,
+        <strong key={1}> ExpressJS-Rest-API</strong>,
         ".",
       ],
     },

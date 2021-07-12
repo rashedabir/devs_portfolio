@@ -9,8 +9,12 @@ import React from "react";
 
 function ServiceCard({ service, dark }) {
   return (
-    <Grid item xs={12} sm={6} lg={5} className="about_service_card">
-      <Card>
+    <Grid item xs={12} sm={5} md={5} lg={5} className="about_service_card">
+      <Card
+        style={
+          dark ? { backgroundColor: "black" } : { backgroundColor: "white" }
+        }
+      >
         <CardActionArea>
           <CardContent className={dark ? "service_card_dark" : "service_card"}>
             <img src={service.icon} alt="icon" />

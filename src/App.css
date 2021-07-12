@@ -9,6 +9,14 @@ a {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right bottom, #13547a, #80d0c7);
+}
+
 .App {
   background-image: linear-gradient(to right bottom, #13547a, #80d0c7);
   padding: 46px 10px;
@@ -279,23 +287,23 @@ a {
   height: 88%;
 }
 .about_intro h4 {
-  padding: 20px 0;
+  padding: 20px 10px;
+  text-align: justify;
 }
 .about_service {
   background-color: #e6e6e6;
   padding: 15px 0px;
-  margin: 20px 0;
   margin-top: 30px;
 }
 .about_service_dark {
   background-color: #111111;
   padding: 15px 0px;
-  margin: 20px 0;
   margin-top: 30px;
 }
 .about_title {
-  padding: 0 20px;
+  padding: 10px 20px;
   font-weight: 800;
+  padding-top: 20px;
   text-transform: capitalize;
 }
 .service {
@@ -309,7 +317,6 @@ a {
   display: flex;
   background-color: black;
   color: white;
-  border-radius: 0px;
 }
 .service_card img {
   width: 40px;
@@ -320,4 +327,107 @@ a {
   width: 40px;
   height: 100%;
   padding-right: 10px;
+}
+
+/*------------------------------------resume------------------------------------*/
+
+.resume_component{
+  flex-grow: 1;
+  height: 88%;
+  overflow-y: auto;
+}
+.resume_component h2{
+  padding: 10px;
+  font-weight: 800;
+}
+.resume_card{
+  margin-bottom: 10px;
+}
+.resume_card .MuiTypography-body1{
+  font-weight: 500;
+}
+.resume_card .details{
+  margin-top: 15px;
+}
+.name_dark{
+  color: white;
+}
+.bar_content{
+  margin-top: 15px;
+}
+.bar {
+  width: 95%;
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  animation: showText 0.5s 1s linear forwards;
+  align-items: center;
+}
+.bar_dark {
+  width: 95%;
+  background-color: #111111;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  animation: showText 0.5s 1s linear forwards;
+  align-items: center;
+}
+.bar_name{
+  text-transform: capitalize;
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.bar_icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.bar_wrapper {
+  background-image: linear-gradient(#13547a, #80d0c7);
+  border-radius: 20px;
+  padding: 4px 14px;
+  color: #fff;
+  font-size: 0.9rem;
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: animate 1.25s cubic-bezier(1, 1, 0.5, 1) forwards;
+  justify-content: space-between;
+}
+.level{
+  font-size: 10px;
+  margin-top: 3.5px;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.bar::before {
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.bar::after {
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+.certificate{
+  margin-top: 15px;
+}
+.certificate h2{
+  padding-bottom: 15px;
+}
+.certificate_card .MuiTypography-body2{
+  font-weight: 500;
+}
+.certificate_card .link{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: start;
 }

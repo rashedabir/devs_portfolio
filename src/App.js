@@ -1,7 +1,7 @@
 import { Container, Grid } from "@material-ui/core";
 import { useState } from "react";
 import "./App.css";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./screens/Sidebar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import About from "./screens/About";
@@ -32,10 +32,10 @@ function App() {
                   <About dark={dark} />
                 </Route>
                 <Route exact path="/resume">
-                  <Resume />
+                  <Resume dark={dark} />
                 </Route>
                 <Route exact path="/projects">
-                  <Project />
+                  <Project dark={dark} />
                 </Route>
               </Switch>
             </Grid>
