@@ -37,14 +37,12 @@ a {
 .sidebar_dark {
   background-color: black;
   color: white;
-  height: 100%;
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(26, 25, 25);
   height: 100%;
 }
 .sidebar {
   background-color: white;
-  height: 100%;
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(26, 25, 25);
   height: 100%;
@@ -166,10 +164,10 @@ a {
 .ui_button Button {
   width: 100%;
 }
-.ui_button .MuiButton-root:hover{
+.ui_button .MuiButton-root:hover {
   border-radius: 50px;
 }
-.dark_button .MuiButton-root:hover{
+.dark_button .MuiButton-root:hover {
   border-radius: 50px;
 }
 .dark_button Button {
@@ -198,14 +196,13 @@ a {
   width: 100%;
   color: white;
 }
-.hire_button .MuiButton-root:hover{
+.hire_button .MuiButton-root:hover {
   border-radius: 50px;
 }
 
 /*----------------------------main----------------------*/
 .main {
   background-color: white;
-  height: 100%;
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(26, 25, 25);
   height: 93.1vh;
@@ -213,7 +210,6 @@ a {
 .main_dark {
   background-color: black;
   color: white;
-  height: 100%;
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(26, 25, 25);
   height: 93.1vh;
@@ -331,28 +327,28 @@ a {
 
 /*------------------------------------resume------------------------------------*/
 
-.resume_component{
+.resume_component {
   flex-grow: 1;
   height: 88%;
   overflow-y: auto;
 }
-.resume_component h2{
+.resume_component h2 {
   padding: 10px;
   font-weight: 800;
 }
-.resume_card{
+.resume_card {
   margin-bottom: 10px;
 }
-.resume_card .MuiTypography-body1{
+.resume_card .MuiTypography-body1 {
   font-weight: 500;
 }
-.resume_card .details{
+.resume_card .details {
   margin-top: 15px;
 }
-.name_dark{
+.name_dark {
   color: white;
 }
-.bar_content{
+.bar_content {
   margin-top: 15px;
 }
 .bar {
@@ -371,7 +367,7 @@ a {
   animation: showText 0.5s 1s linear forwards;
   align-items: center;
 }
-.bar_name{
+.bar_name {
   text-transform: capitalize;
 }
 @keyframes showText {
@@ -395,7 +391,7 @@ a {
   animation: animate 1.25s cubic-bezier(1, 1, 0.5, 1) forwards;
   justify-content: space-between;
 }
-.level{
+.level {
   font-size: 10px;
   margin-top: 3.5px;
 }
@@ -416,18 +412,176 @@ a {
     opacity: 1;
   }
 }
-.certificate{
+.certificate {
   margin-top: 15px;
 }
-.certificate h2{
+.certificate h2 {
   padding-bottom: 15px;
 }
-.certificate_card .MuiTypography-body2{
+.certificate_card .MuiTypography-body2 {
   font-weight: 500;
 }
-.certificate_card .link{
+.certificate_card .link {
   height: 100%;
   padding: 0;
   margin: 0;
   text-align: start;
+}
+
+/*-----------------------------------projects-------------------------------------*/
+
+.projects {
+  flex-grow: 1;
+  height: 88%;
+  overflow-y: auto;
+  padding: 15px 0;
+}
+.projects_bar {
+  align-items: center;
+}
+.projects_navbar_dark {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.project-search_dark {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  padding: 3px 7px;
+  width: 100%;
+  height: 35px;
+  align-items: center;
+}
+.project-search {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  padding: 3px 7px;
+  width: 100%;
+  height: 35px;
+  align-items: center;
+}
+.project-search input {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  background: none;
+  color: black;
+  border: none;
+  z-index: 1;
+}
+.project-search_dark input {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  background: none;
+  color: white;
+  border: none;
+  z-index: 1;
+}
+.project-search input:focus {
+  outline: none;
+  border: none;
+}
+.project-search_dark input:focus {
+  outline: none;
+  border: none;
+}
+.project_card {
+  max-width: 393px;
+  margin: 10px;
+}
+.search {
+  font-size: 2rem;
+  cursor: pointer;
+  color: gray;
+  margin-right: 5px;
+}
+.project_card .MuiTypography-body1 {
+  font-size: 19px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+}
+.project_box_card {
+  margin-top: 18px;
+}
+.project_card .card_actions{
+  justify-content: center;
+}
+.project_card .github {
+  background-image: linear-gradient(
+    to right,
+    #13547a 0%,
+    #4e4376 51%,
+    #2b5876 100%
+  );
+  margin: 0 20px;
+  padding: 10px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  display: block;
+}
+
+.project_card .github:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.project_card .deploy{
+  background-image: linear-gradient(to right, #EB3349 0%, #F45C43  51%, #EB3349  100%);
+   padding: 10px 25px;
+   margin: 0 20px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   display: block;
+}
+ .project_card .deploy:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+.projects_navbar-item_dark > div {
+  margin: 0 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.projects_navbar-item {
+  display: flex;
+  margin: 5px 0;
+  padding: 3px 7px;
+  color: black;
+  text-transform: capitalize;
+}
+.projects_navbar-item_dark {
+  display: flex;
+  margin: 5px 0;
+  padding: 3px 7px;
+  color: white;
+  text-transform: capitalize;
+}
+.projects_navbar-item > div {
+  margin: 0 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.active_nav {
+  color: #62aeb2;
+  font-weight: 500;
+}
+.nav {
+  transition: all 0.2s;
+}
+.nav:hover {
+  color: #13547a;
 }
