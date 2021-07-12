@@ -12,6 +12,7 @@ import React from "react";
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    backgroundColor: "#eee",
   },
   dark: {
     maxWidth: 345,
