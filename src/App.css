@@ -4,6 +4,8 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to right bottom, #13547a, #80d0c7);
+  background-attachment: fixed;
 }
 a {
   text-decoration: none;
@@ -18,12 +20,11 @@ a {
 }
 
 .App {
-  background-image: linear-gradient(to right bottom, #13547a, #80d0c7);
   padding: 46px 10px;
 }
 .App_dark {
   background-color: #111111;
-  padding: 46px 10px;
+  padding: 48px 10px;
 }
 
 .app_content {
@@ -49,9 +50,10 @@ a {
 }
 .sidebar_left {
   text-align: center;
+  padding: 15px 0;
 }
 .sidebar_left img {
-  width: 180px;
+  width: 145px;
   border-radius: 50%;
   border: 4px solid #13547a;
 }
@@ -205,14 +207,12 @@ a {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(26, 25, 25);
-  height: 93.1vh;
 }
 .main_dark {
   background-color: black;
   color: white;
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(26, 25, 25);
-  height: 93.1vh;
 }
 
 /*--------------------------navbar-------------------------------*/
@@ -239,12 +239,14 @@ a {
   font-weight: 700;
   color: black;
   border-bottom: 4px solid #13547a;
+  text-transform: uppercase;
 }
 .navbar_active_dark {
   font-size: 1.6rem;
   font-weight: 700;
   color: white;
   border-bottom: 4px solid #13547a;
+  text-transform: uppercase;
 }
 .navbar_item {
   margin-right: 20px;
@@ -280,7 +282,7 @@ a {
 
 .about_intro {
   overflow-y: auto;
-  height: 88%;
+  height: 78vh;
 }
 .about_intro h4 {
   padding: 20px 10px;
@@ -329,7 +331,7 @@ a {
 
 .resume_component {
   flex-grow: 1;
-  height: 88%;
+  height: 78vh;
   overflow-y: auto;
 }
 .resume_component h2 {
@@ -432,7 +434,7 @@ a {
 
 .projects {
   flex-grow: 1;
-  height: 88%;
+  height: 78vh;
   overflow-y: auto;
   padding: 15px 0;
 }
@@ -450,8 +452,8 @@ a {
   border: 1px solid grey;
   border-radius: 0.5rem;
   padding: 3px 7px;
-  width: 100%;
-  height: 35px;
+  width: 96%;
+  height: 40px;
   align-items: center;
 }
 .project-search {
@@ -459,8 +461,8 @@ a {
   border: 1px solid grey;
   border-radius: 0.5rem;
   padding: 3px 7px;
-  width: 100%;
-  height: 35px;
+  width: 96%;
+  height: 40px !important;
   align-items: center;
 }
 .project-search input {
@@ -489,73 +491,42 @@ a {
   outline: none;
   border: none;
 }
-.project_card {
-  max-width: 393px;
-  margin: 10px;
+.project_box_card{
+  margin-top: 25px !important;
 }
-.search {
-  font-size: 2rem;
-  cursor: pointer;
-  color: gray;
-  margin-right: 5px;
-}
-.project_card .MuiTypography-body1 {
-  font-size: 19px;
-  font-weight: 500;
+.project_card{
+  align-items: center;
   text-align: center;
-  text-transform: capitalize;
+  margin: auto;
+  margin-bottom: 10px !important;
 }
-.project_box_card {
-  margin-top: 18px;
+.project_card img{
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #13547a;
+  transition: transform 0.3s linear;
 }
-.project_card .card_actions{
-  justify-content: center;
+.project_card img:hover{
+  transform: scale(1.05);
 }
-.project_card .github {
-  background-image: linear-gradient(
-    to right,
-    #13547a 0%,
-    #4e4376 51%,
-    #2b5876 100%
-  );
-  margin: 0 20px;
-  padding: 10px 25px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
+.project_card p{
+  font-weight: 600;
+}
+.project_card p:hover{
+  color: #13547a;
+}
+.project_title{
   color: white;
-  display: block;
 }
-
-.project_card .github:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
+.git_icon{
+  margin-right: 5px;
+  color: #13547a;
 }
-
-.project_card .deploy{
-  background-image: linear-gradient(to right, #EB3349 0%, #F45C43  51%, #EB3349  100%);
-   padding: 10px 25px;
-   margin: 0 20px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: white;            
-   display: block;
-}
- .project_card .deploy:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
- }
 .projects_navbar-item_dark > div {
   margin: 0 5px;
   font-size: 1rem;
   cursor: pointer;
 }
-
 .projects_navbar-item {
   display: flex;
   margin: 5px 0;
@@ -584,4 +555,52 @@ a {
 }
 .nav:hover {
   color: #13547a;
+}
+
+
+
+/*---------------------------------------not found-------------------------------------------------*/
+
+.not_found{
+  align-items: center;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.not_found h1{
+  color: #13547a;
+  font-size: 12.5rem;
+  letter-spacing: .10em;
+  margin: .025em 0;
+  text-shadow: .05em .05em 0 rgba(0,0,0,.25);
+  white-space: nowrap;
+}
+.not_found h1 > span{
+  animation: spooky 2s alternate infinite linear;
+    color: #528cce;
+    display: inline-block;
+}
+@keyframes spooky {
+  from {
+    transform: translatey(.15em) scaley(.95);
+  }
+  
+  to {
+    transform: translatey(-.15em);
+  }
+}
+.not_found h2{
+  color: #13547a;
+  margin-bottom: .40em;
+}
+.not_found p{
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 30rem) {
+  .not_found h1{
+    font-size: 5rem;
+  }
 }

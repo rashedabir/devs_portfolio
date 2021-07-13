@@ -4,6 +4,7 @@ import ProjectNavbar from "../components/ProjectNavbar";
 import ProjectsCard from "../components/ProjectsCard";
 import projectsData from "../utils/projectsData";
 import SearchIcon from "@material-ui/icons/Search";
+import ProjectMotFound from "../components/ProjectMotFound";
 
 function Project({ dark }) {
   const [projects, setProjects] = useState(projectsData);
@@ -47,10 +48,10 @@ function Project({ dark }) {
           </div>
         </Grid>
       </Grid>
-      <Grid container justify="center" className="project_box_card">
+      <Grid container className="project_box_card" spacing={1}>
         {handleSearch.length
           ? handleSearch.map((data) => <ProjectsCard dark={dark} data={data} />)
-          : null}
+          : <ProjectMotFound search={search} />}
       </Grid>
     </Container>
   );
