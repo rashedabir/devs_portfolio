@@ -30,7 +30,7 @@ a {
   padding: 46px 10px;
 }
 .App_dark {
-  background-color: #111111;
+  background-color: #202024;
   background-attachment: fixed;
   padding: 48.79px 10px;
 }
@@ -44,7 +44,7 @@ a {
 /*----------------------------------------sidebar----------------------------------------*/
 
 .sidebar_dark {
-  background-color: black;
+  background-color: #0f1115;
   color: white;
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(26, 25, 25);
@@ -75,7 +75,7 @@ a {
 }
 .heading_dark {
   width: 100%;
-  background: #111111;
+  background: #16181d;
   border-radius: 15px;
 }
 .heading Button {
@@ -142,7 +142,7 @@ a {
   color: white;
 }
 .info_dark {
-  background-color: #111111;
+  background-color: #16181d;
   margin: 10px -20px;
   padding: 10px 0;
 }
@@ -221,7 +221,7 @@ a {
   box-shadow: 0 0 10px rgb(26, 25, 25);
 }
 .main_dark {
-  background-color: black;
+  background-color: #0f1115;
   color: white;
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(26, 25, 25);
@@ -237,7 +237,7 @@ a {
   align-items: center;
 }
 .navbar_dark {
-  background-color: black;
+  background-color: #0f1115;
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
@@ -306,7 +306,7 @@ a {
   margin-top: 30px;
 }
 .about_service_dark {
-  background-color: #111111;
+  background-color: #0a0b0e;
   padding: 15px 0px;
   margin-top: 30px;
 }
@@ -325,7 +325,7 @@ a {
 }
 .service_card_dark {
   display: flex;
-  background-color: black;
+  background-color: #16181d;
   color: white;
 }
 .service_card img {
@@ -375,7 +375,7 @@ a {
 }
 .bar_dark {
   width: 95%;
-  background-color: #111111;
+  background-color: #16181d;
   border-radius: 20px;
   margin-bottom: 12px;
   animation: showText 0.5s 1s linear forwards;
@@ -502,6 +502,9 @@ a {
 .project-search_dark input:focus {
   outline: none;
   border: none;
+}
+.cancel{
+  cursor: pointer;
 }
 .project_box_card{
   margin-top: 25px !important;

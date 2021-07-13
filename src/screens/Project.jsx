@@ -55,7 +55,7 @@ function Project({ dark }) {
       animate="visible"
       exit="exit"
     >
-      <Container className="projects">
+      <Container maxWidth="lg" className="projects">
         <Grid container spacing={3} className="projects_bar">
           <Grid item xs={12} lg={8}>
             <ProjectNavbar
@@ -71,7 +71,16 @@ function Project({ dark }) {
                 placeholder="Search Project"
                 type="text"
                 onChange={(e) => setSearch(e.target.value)}
+                value={search}
               />
+              {search.length ? (
+                <i
+                  onClick={() => {
+                    setSearch("");
+                  }}
+                  className="fas fa-times-circle search cancel"
+                ></i>
+              ) : null}
             </div>
           </Grid>
         </Grid>

@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   },
   dark: {
     maxWidth: 345,
-    backgroundColor: "#111111",
+    backgroundColor: "#16181d",
     color: "#fff",
   },
 });
