@@ -2,7 +2,12 @@ import { Container, Grid } from "@material-ui/core";
 import { useState } from "react";
 import "./App.css";
 import Sidebar from "./screens/Sidebar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import About from "./screens/About";
 import Resume from "./screens/Resume";
@@ -10,6 +15,7 @@ import Project from "./screens/Project";
 
 function App() {
   const [dark, setDark] = useState(false);
+
   return (
     <Router>
       <div className={dark ? "App_dark" : "App"}>
@@ -36,6 +42,9 @@ function App() {
                 </Route>
                 <Route exact path="/projects">
                   <Project dark={dark} />
+                </Route>
+                <Route>
+                  <Redirect to="/" />
                 </Route>
               </Switch>
             </Grid>

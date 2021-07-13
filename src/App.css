@@ -6,6 +6,13 @@ body {
   font-family: "Poppins", sans-serif;
   background-image: linear-gradient(to right bottom, #13547a, #80d0c7);
   background-attachment: fixed;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
 }
 a {
   text-decoration: none;
@@ -24,7 +31,8 @@ a {
 }
 .App_dark {
   background-color: #111111;
-  padding: 48px 10px;
+  background-attachment: fixed;
+  padding: 48.79px 10px;
 }
 
 .app_content {
@@ -33,7 +41,7 @@ a {
   padding: 0 10px;
 }
 
-/*------------------------sidebar------------------*/
+/*----------------------------------------sidebar----------------------------------------*/
 
 .sidebar_dark {
   background-color: black;
@@ -87,12 +95,12 @@ a {
   border-radius: 15px;
   padding: 10px 0;
 }
-.resume Button {
+.resume .MuiButton-root {
   width: 100%;
   align-items: center;
   padding: 10px 0;
 }
-.resume_dark Button {
+.resume_dark .MuiButton-root {
   width: 100%;
   color: white;
   align-items: center;
@@ -193,13 +201,17 @@ a {
   background-image: linear-gradient(to right bottom, #13547a, #80d0c7);
   border-radius: 25px;
   margin-top: 10px;
+  transition: all 1s;
 }
-.hire_button Button {
+.hire_button .MuiButton-root {
   width: 100%;
   color: white;
 }
 .hire_button .MuiButton-root:hover {
   border-radius: 50px;
+}
+.hire_button:hover{
+  transform: scale(1.1);
 }
 
 /*----------------------------main----------------------*/
@@ -511,6 +523,7 @@ a {
 }
 .project_card p{
   font-weight: 600;
+  width: 100%;
 }
 .project_card p:hover{
   color: #13547a;

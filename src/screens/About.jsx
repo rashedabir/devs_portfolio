@@ -5,8 +5,9 @@ import computer from "../assets/icons/computer.png";
 import backend from "../assets/icons/backend.png";
 import javag from "../assets/icons/javag.png";
 import ServiceCard from "../components/ServiceCard";
+import { motion } from "framer-motion";
 
-function About({dark}) {
+function About({ dark }) {
   const service = [
     {
       icon: computer,
@@ -57,8 +58,34 @@ function About({dark}) {
       ],
     },
   ];
+
+  const navbar_varient = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.2,
+        duration: 0.8,
+      },
+    },
+    exit: {
+      opacity: 0,
+      transition: {
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
-    <div className="about_intro">
+    <motion.div
+      className="about_intro"
+      variants={navbar_varient}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <Typography>
         <h4>
           I'm currently pursuing B.SC(Final Year) in Computer Science
@@ -70,15 +97,17 @@ function About({dark}) {
           inspires me as a different aspect.
         </h4>
       </Typography>
-      <div className={ dark ? "about_service_dark" : "about_service"}>
-        <Typography variant="h5" className="about_title"><h3>what i offer</h3></Typography>
+      <div className={dark ? "about_service_dark" : "about_service"}>
+        <Typography variant="h5" className="about_title">
+          <h3>what i offer</h3>
+        </Typography>
         <Grid container className="service" justify="center">
           {service.map((service) => (
             <ServiceCard dark={dark} service={service} />
           ))}
         </Grid>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

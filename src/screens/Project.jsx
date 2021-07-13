@@ -4,7 +4,8 @@ import ProjectNavbar from "../components/ProjectNavbar";
 import ProjectsCard from "../components/ProjectsCard";
 import projectsData from "../utils/projectsData";
 import SearchIcon from "@material-ui/icons/Search";
-import ProjectMotFound from "../components/ProjectMotFound";
+import ProjectNotFound from "../components/ProjectNotFound";
+import { motion } from "framer-motion";
 
 function Project({ dark }) {
   const [projects, setProjects] = useState(projectsData);
@@ -27,33 +28,62 @@ function Project({ dark }) {
   const handleSearch = projects.filter((project) => {
     return project.name.toLowerCase().includes(search.toLowerCase());
   });
+
+  const navbar_varient = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.2,
+        duration: 0.8,
+      },
+    },
+    exit: {
+      opacity: 0,
+      transition: {
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
-    <Container className="projects">
-      <Grid container spacing={3} className="projects_bar">
-        <Grid item xs={12} lg={8}>
-          <ProjectNavbar
-            active={active}
-            dark={dark}
-            handleFilterCategory={handleFilterCategory}
-          />
-        </Grid>
-        <Grid item xs={12} lg={4}>
-          <div className={dark ? "project-search_dark" : "project-search"}>
-            <SearchIcon className="search" />
-            <input
-              placeholder="Search Project"
-              type="text"
-              onChange={(e) => setSearch(e.target.value)}
+    <motion.div
+      variants={navbar_varient}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
+      <Container className="projects">
+        <Grid container spacing={3} className="projects_bar">
+          <Grid item xs={12} lg={8}>
+            <ProjectNavbar
+              active={active}
+              dark={dark}
+              handleFilterCategory={handleFilterCategory}
             />
-          </div>
+          </Grid>
+          <Grid item xs={12} lg={4}>
+            <div className={dark ? "project-search_dark" : "project-search"}>
+              <SearchIcon className="search" />
+              <input
+                placeholder="Search Project"
+                type="text"
+                onChange={(e) => setSearch(e.target.value)}
+              />
+            </div>
+          </Grid>
         </Grid>
-      </Grid>
-      <Grid container className="project_box_card" spacing={1}>
-        {handleSearch.length
-          ? handleSearch.map((data) => <ProjectsCard dark={dark} data={data} />)
-          : <ProjectMotFound search={search} />}
-      </Grid>
-    </Container>
+        <Grid container className="project_box_card" spacing={1}>
+          {handleSearch.length ? (
+            handleSearch.map((data) => <ProjectsCard dark={dark} data={data} />)
+          ) : (
+            <ProjectNotFound search={search} />
+          )}
+        </Grid>
+      </Container>
+    </motion.div>
   );
 }
 

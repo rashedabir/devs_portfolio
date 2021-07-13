@@ -11,10 +11,45 @@ import RoomIcon from "@material-ui/icons/Room";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneIphoneIcon from "@material-ui/icons/PhoneIphone";
 import Typed from "react-typed";
+import aburashedkhan from "../assets/aburashedkhan.pdf";
+import { motion } from "framer-motion";
 
 function Sidebar({ dark, setDark }) {
+  const handleEmail = () => {
+    window.open("mailto:rashedabir.cse@gmail.com");
+  };
+
+  const handleCall = () => {
+    window.open("tel:+8801629341869");
+  };
+
+  const navbar_varient = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.2,
+        duration: 0.8,
+      },
+    },
+    exit: {
+      opacity: 0,
+      transition: {
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
-    <div className="sidebar_left">
+    <motion.div
+      className="sidebar_left"
+      variants={navbar_varient}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <img src={rashed} width="100%" alt="rashed abir" />
       <Typography className="title" variant="h5">
         <h4>Abu Rashed Khan</h4>
@@ -41,7 +76,7 @@ function Sidebar({ dark, setDark }) {
         </Button>
       </div>
       <div className={dark ? "resume_dark" : "resume"}>
-        <Button>
+        <Button href={aburashedkhan} download="aburashedkhan.pdf">
           <Typography className="d-flex">
             <GetAppIcon className="icon" />
             <h4>Download Resume</h4>
@@ -89,13 +124,13 @@ function Sidebar({ dark, setDark }) {
             <GitHubIcon className="icon" /> <h4>github</h4>
           </a>
         </Button>
-        <Button>
+        <Button href="https://g.page/rashed-abir?share" target="_blank">
           <RoomIcon className="icon" /> <h4>Comilla, Bangladesh</h4>
         </Button>
-        <Button>
+        <Button onClick={handleEmail}>
           <EmailIcon className="icon" /> <h4>rashedabir.cse@gmail.com</h4>
         </Button>
-        <Button>
+        <Button onClick={handleCall}>
           <PhoneIphoneIcon className="icon" /> <h4>+880 162 9341869</h4>
         </Button>
       </div>
@@ -109,11 +144,11 @@ function Sidebar({ dark, setDark }) {
         </Button>
       </div>
       <div className="hire_button">
-        <Button>
+        <Button href="https://www.fiverr.com/rashedkhan126" target="_blank">
           <h3>hire me</h3>
         </Button>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

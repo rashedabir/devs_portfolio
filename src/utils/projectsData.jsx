@@ -152,7 +152,7 @@ const projectsData = [
     image: doctor,
     deployed_url: "https://doctor-vai.web.app/",
     github_url: "https://github.com/rashedabir/doctor_vai",
-    category: ["java", "oracle"],
+    category: ["react.js", "redux"],
   },
   {
     id: 18,

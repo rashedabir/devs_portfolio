@@ -1,6 +1,7 @@
 import { Button } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Navbar({ dark }) {
   const [active, setActive] = useState("");
@@ -16,8 +17,29 @@ function Navbar({ dark }) {
     }
   }, [active]);
 
+  const navbar_varient = {
+    hidden: {
+      y: "-30px",
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.2,
+        duration: 0.7,
+        type: "spring",
+      },
+    },
+  };
+
   return (
-    <div className={dark ? "navbar_dark" : "navbar"}>
+    <motion.div
+      className={dark ? "navbar_dark" : "navbar"}
+      variants={navbar_varient}
+      initial="hidden"
+      animate="visible"
+    >
       <div className={dark ? "navbar_active_dark" : "navbar_active"}>
         {active}
       </div>
@@ -60,7 +82,7 @@ function Navbar({ dark }) {
           </Link>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
