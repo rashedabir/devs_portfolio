@@ -9,7 +9,7 @@ import React from "react";
 
 function ServiceCard({ service, dark }) {
   return (
-    <Grid item xs={12} sm={5} md={5} lg={5} className="about_service_card">
+    <Grid item xs={12} sm={6} className="about_service_card">
       <Card
         style={
           dark ? { backgroundColor: "black" } : { backgroundColor: "white" }

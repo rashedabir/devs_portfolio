@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@material-ui/core";
+import { Container, Grid, Typography } from "@material-ui/core";
 import React from "react";
 import api from "../assets/icons/api.png";
 import computer from "../assets/icons/computer.png";
@@ -97,16 +97,16 @@ function About({ dark }) {
           inspires me as a different aspect.
         </h4>
       </Typography>
-      <div className={dark ? "about_service_dark" : "about_service"}>
+      <Container className={dark ? "about_service_dark" : "about_service"}>
         <Typography variant="h5" className="about_title">
           <h3>what i offer</h3>
         </Typography>
-        <Grid container className="service" justify="center">
+        <Grid container className="service" spacing={3}>
           {service.map((service) => (
             <ServiceCard dark={dark} service={service} />
           ))}
         </Grid>
-      </div>
+      </Container>
     </motion.div>
   );
 }
