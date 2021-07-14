@@ -24,7 +24,7 @@ const useStyles = makeStyles({
 function CertificateCard({ data, dark }) {
   const classes = useStyles();
   return (
-    <Grid item xs={12} sm={6} className={"certificate_card"}>
+    <Grid item xs={12} sm={6} md={6} lg={6} className={"certificate_card"}>
       <Button className="link" href={data.link} target="_blank">
         <Card className={dark ? classes.dark : classes.root}>
           <CardActionArea>

@@ -66,7 +66,7 @@ function Project({ dark }) {
           </Grid>
           <Grid item xs={12} lg={4}>
             <div className={dark ? "project-search_dark" : "project-search"}>
-              <SearchIcon className="search" />
+              <SearchIcon className={dark ? "search_dark" : "search"} />
               <input
                 placeholder="Search Project"
                 type="text"
@@ -78,7 +78,7 @@ function Project({ dark }) {
                   onClick={() => {
                     setSearch("");
                   }}
-                  className="fas fa-times-circle search cancel"
+                  className="fas fa-times-circle cancel"
                 ></i>
               ) : null}
             </div>
