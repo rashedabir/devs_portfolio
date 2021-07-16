@@ -67,6 +67,7 @@ a {
 }
 .sidebar_left .title {
   padding: 10px;
+  font-family: 'Roboto Slab', serif;
 }
 .heading {
   width: 100%;
@@ -339,6 +340,7 @@ a {
   font-weight: 800;
   padding-top: 20px;
   text-transform: capitalize;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 .service {
   padding: 15px;
@@ -549,6 +551,12 @@ a {
   text-align: center;
   margin: auto;
   margin-bottom: 10px !important;
+}
+.project_card .MuiButton-root{
+  padding: 5px 0;
+}
+.project_card .MuiButton-root:hover{
+  background-color: white;
 }
 .project_card img{
   width: 100%;

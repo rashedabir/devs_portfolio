@@ -115,15 +115,8 @@ function Sidebar({ dark, setDark }) {
           </Button>
         </div>
         <div className={dark ? "info_dark" : "info"}>
-          <Button>
-            <a
-              className="d-flex"
-              href="https://github.com/rashedabir"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <GitHubIcon className="icon" /> <h4>github</h4>
-            </a>
+          <Button href="https://github.com/rashedabir" target="_blank">
+            <GitHubIcon className="icon" /> <h4>github</h4>
           </Button>
           <Button href="https://g.page/rashed-abir?share" target="_blank">
             <RoomIcon className="icon" /> <h4>Comilla, Bangladesh</h4>
