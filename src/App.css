@@ -67,7 +67,7 @@ a {
 }
 .sidebar_left .title {
   padding: 10px;
-  font-family: 'Roboto Slab', serif;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 .heading {
   width: 100%;
@@ -108,7 +108,7 @@ a {
   padding: 10px 0;
   transition: all 0.4s;
 }
-.resume_dark .MuiButton-root:hover{
+.resume_dark .MuiButton-root:hover {
   background-color: #16181d;
 }
 .resume .icon {
@@ -140,10 +140,10 @@ a {
   color: #13547a;
   font-size: 35px;
 }
-.social_icons_dark .MuiButton-root{
+.social_icons_dark .MuiButton-root {
   transition: all 0.2s;
 }
-.social_icons_dark .MuiButton-root:hover{
+.social_icons_dark .MuiButton-root:hover {
   background-color: #16181d;
 }
 .info {
@@ -164,10 +164,10 @@ a {
   margin: 10px -20px;
   padding: 10px 0;
 }
-.info_dark .MuiButton-root{
+.info_dark .MuiButton-root {
   width: 100%;
 }
-.info_dark .MuiButton-root:hover{
+.info_dark .MuiButton-root:hover {
   background-color: #202024;
   width: 100%;
 }
@@ -235,7 +235,7 @@ a {
 .hire_button .MuiButton-root:hover {
   border-radius: 50px;
 }
-.hire_button:hover{
+.hire_button:hover {
   transform: scale(1.1);
 }
 
@@ -290,14 +290,14 @@ a {
   text-decoration: none;
   color: black;
   font-size: 1.3rem;
-  cursor: pointer;
+  font-weight: 600 !important;
 }
 .navbar_item_dark {
   margin-right: 20px;
   text-decoration: none;
   color: white;
   font-size: 1.3rem;
-  cursor: pointer;
+  font-weight: 600 !important;
 }
 .navbar .MuiButton-root {
   border-radius: 0;
@@ -340,7 +340,6 @@ a {
   font-weight: 800;
   padding-top: 20px;
   text-transform: capitalize;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 .service {
   padding: 15px;
@@ -529,56 +528,56 @@ a {
   outline: none;
   border: none;
 }
-.search{
+.search {
   margin-right: 5px;
   color: #16181d;
 }
-.search_dark{
+.search_dark {
   margin-right: 5px;
   color: #e6e6e6;
 }
-.cancel{
+.cancel {
   cursor: pointer;
   margin-left: 5px;
   color: #13547a;
   font-size: 18px;
 }
-.project_box_card{
+.project_box_card {
   margin-top: 25px !important;
 }
-.project_card{
+.project_card {
   align-items: center;
   text-align: center;
   margin: auto;
   margin-bottom: 10px !important;
 }
-.project_card .MuiButton-root{
+.project_card .MuiButton-root {
   padding: 5px 0;
 }
-.project_card .MuiButton-root:hover{
+.project_card .MuiButton-root:hover {
   background: none;
 }
-.project_card img{
+.project_card img {
   width: 100%;
   min-height: 180px;
   border-radius: 10px;
   border: 1px solid #13547a;
   transition: transform 0.3s linear;
 }
-.project_card img:hover{
+.project_card img:hover {
   transform: scale(1.05);
 }
-.project_card p{
+.project_card p {
   font-weight: 600;
   width: 100%;
 }
-.project_card p:hover{
+.project_card p:hover {
   color: #13547a;
 }
-.project_title{
+.project_title {
   color: white;
 }
-.git_icon{
+.git_icon {
   margin-right: 5px;
   color: #13547a;
 }
@@ -617,11 +616,9 @@ a {
   color: #13547a;
 }
 
+/*--------------------------not found----------------------------*/
 
-
-/*---------------------------------------not found-------------------------------------------------*/
-
-.not_found{
+.not_found {
   align-items: center;
   display: flex;
   width: 100%;
@@ -629,47 +626,47 @@ a {
   justify-content: center;
   text-align: center;
 }
-.not_found h1{
+.not_found h1 {
   color: #13547a;
   font-size: 12.5rem;
-  letter-spacing: .10em;
-  margin: .025em 0;
-  text-shadow: .05em .05em 0 rgba(0,0,0,.25);
+  letter-spacing: 0.1em;
+  margin: 0.025em 0;
+  text-shadow: 0.05em 0.05em 0 rgba(0, 0, 0, 0.25);
   white-space: nowrap;
 }
-.not_found h1 > span{
+.not_found h1 > span {
   animation: spooky 2s alternate infinite linear;
-    color: #528cce;
-    display: inline-block;
+  color: #528cce;
+  display: inline-block;
 }
 @keyframes spooky {
   from {
-    transform: translatey(.15em) scaley(.95);
+    transform: translatey(0.15em) scaley(0.95);
   }
-  
+
   to {
-    transform: translatey(-.15em);
+    transform: translatey(-0.15em);
   }
 }
-.not_found h2{
+.not_found h2 {
   color: #13547a;
-  margin-bottom: .40em;
+  margin-bottom: 0.4em;
 }
-.not_found p{
+.not_found p {
   margin-top: 0;
 }
 
 @media only screen and (max-width: 30rem) {
-  .not_found h1{
+  .not_found h1 {
     font-size: 5rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .bar{
+  .bar {
     width: 100%;
   }
-  .bar_dark{
+  .bar_dark {
     width: 100%;
   }
 }
