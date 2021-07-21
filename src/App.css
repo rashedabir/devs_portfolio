@@ -4,7 +4,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-image: linear-gradient(to right bottom, #13547a, #80d0c7);
+  background-image: linear-gradient(120deg, #2980b9, #8e44ad);
   background-attachment: fixed;
 
   -webkit-touch-callout: none; /* iOS Safari */
@@ -23,7 +23,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to right bottom, #13547a, #80d0c7);
+  background-image: linear-gradient(120deg, #2980b9, #8e44ad);
 }
 
 .App {
@@ -63,7 +63,7 @@ a {
 .sidebar_left img {
   width: 145px;
   border-radius: 50%;
-  border: 4px solid #13547a;
+  border: 4px solid #4f69b4;
 }
 .sidebar_left .title {
   padding: 10px;
@@ -112,16 +112,16 @@ a {
   background-color: #16181d;
 }
 .resume .icon {
-  color: #13547a;
+  color: #4f69b4;
 }
 .resume_dark .icon {
-  color: #13547a;
+  color: #4f69b4;
 }
 .resume .MuiButton-root:hover {
-  color: #13547a;
+  color: #4f69b4;
 }
 .resume_dark .MuiButton-root:hover {
-  color: #13547a;
+  color: #4f69b4;
 }
 .d-flex {
   display: flex;
@@ -133,11 +133,11 @@ a {
   padding: 0;
 }
 .social_icons .icon {
-  color: #13547a;
+  color: #4f69b4;
   font-size: 35px;
 }
 .social_icons_dark .icon {
-  color: #13547a;
+  color: #4f69b4;
   font-size: 35px;
 }
 .social_icons_dark .MuiButton-root {
@@ -180,20 +180,20 @@ a {
 }
 .info .icon {
   padding: 0 5px;
-  color: #13547a;
+  color: #4f69b4;
 }
 .info_dark .icon {
   padding: 0 5px;
-  color: #13547a;
+  color: #4f69b4;
 }
 .ui_button {
   width: 100%;
-  border: 1px solid #13547a;
+  border: 1px solid #4f69b4;
   border-radius: 25px;
 }
 .dark_button {
   width: 100%;
-  border: 1px solid #13547a;
+  border: 1px solid #4f69b4;
   border-radius: 25px;
 }
 .ui_button Button {
@@ -223,7 +223,7 @@ a {
 }
 .hire_button {
   width: 100%;
-  background-image: linear-gradient(to right bottom, #13547a, #80d0c7);
+  background-image: linear-gradient(120deg, #2980b9, #8e44ad);
   border-radius: 25px;
   margin-top: 10px;
   transition: all 1s;
@@ -275,14 +275,14 @@ a {
   font-size: 1.6rem;
   font-weight: 700;
   color: black;
-  border-bottom: 4px solid #13547a;
+  border-bottom: 4px solid #4f69b4;
   text-transform: uppercase;
 }
 .navbar_active_dark {
   font-size: 1.6rem;
   font-weight: 700;
   color: white;
-  border-bottom: 4px solid #13547a;
+  border-bottom: 4px solid #4f69b4;
   text-transform: uppercase;
 }
 .navbar_item {
@@ -309,10 +309,10 @@ a {
   color: white;
 }
 .navbar .MuiButton-root:hover {
-  color: #13547a;
+  color: #4f69b4;
 }
 .navbar_dark .MuiButton-root:hover {
-  color: #13547a;
+  color: #4f69b4;
 }
 
 /*------------------------------------about-----------------------------------*/
@@ -348,20 +348,22 @@ a {
 .service_card {
   display: flex;
 }
+.service_card i {
+  font-size: 30px;
+  margin-right: 12px;
+  margin-top: 8px;
+  color: #4f69b4;
+}
 .service_card_dark {
   display: flex;
   background-color: #16181d;
   color: white;
 }
-.service_card img {
-  width: 40px;
-  height: 100%;
-  padding-right: 10px;
-}
-.service_card_dark img {
-  width: 40px;
-  height: 100%;
-  padding-right: 10px;
+.service_card_dark i {
+  font-size: 30px;
+  margin-right: 12px;
+  color: #4f69b4;
+  margin-top: 8px;
 }
 
 /*------------------------------------resume------------------------------------*/
@@ -420,7 +422,7 @@ a {
   margin-right: 5px;
 }
 .bar_wrapper {
-  background-image: linear-gradient(#13547a, #80d0c7);
+  background-image: linear-gradient(120deg, #2980b9, #8e44ad);
   border-radius: 20px;
   padding: 4px 14px;
   color: #fff;
@@ -534,12 +536,12 @@ a {
 }
 .search_dark {
   margin-right: 5px;
-  color: #e6e6e6;
+  color: #4f69b4;
 }
 .cancel {
   cursor: pointer;
   margin-left: 5px;
-  color: #13547a;
+  color: #f95e5e;
   font-size: 18px;
 }
 .project_box_card {
@@ -561,7 +563,7 @@ a {
   width: 100%;
   min-height: 180px;
   border-radius: 10px;
-  border: 1px solid #13547a;
+  border: 1px solid #4f69b4;
   transition: transform 0.3s linear;
 }
 .project_card img:hover {
@@ -572,14 +574,14 @@ a {
   width: 100%;
 }
 .project_card p:hover {
-  color: #13547a;
+  color: #4f69b4;
 }
 .project_title {
   color: white;
 }
 .git_icon {
   margin-right: 5px;
-  color: #13547a;
+  color: #4f69b4;
 }
 .projects_navbar-item_dark > div {
   margin: 0 5px;
@@ -606,14 +608,14 @@ a {
   cursor: pointer;
 }
 .active_nav {
-  color: #62aeb2;
+  color: #4f69b4;
   font-weight: 500;
 }
 .nav {
   transition: all 0.2s;
 }
 .nav:hover {
-  color: #13547a;
+  color: #8b47ae;
 }
 
 /*--------------------------not found----------------------------*/
@@ -627,7 +629,7 @@ a {
   text-align: center;
 }
 .not_found h1 {
-  color: #13547a;
+  color: #4f69b4;
   font-size: 12.5rem;
   letter-spacing: 0.1em;
   margin: 0.025em 0;
@@ -639,6 +641,9 @@ a {
   color: #528cce;
   display: inline-block;
 }
+.not_found h2 {
+  color: #f95e5e !important;
+}
 @keyframes spooky {
   from {
     transform: translatey(0.15em) scaley(0.95);
@@ -649,7 +654,7 @@ a {
   }
 }
 .not_found h2 {
-  color: #13547a;
+  color: #4f69b4;
   margin-bottom: 0.4em;
 }
 .not_found p {

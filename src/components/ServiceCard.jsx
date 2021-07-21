@@ -17,7 +17,7 @@ function ServiceCard({ service, dark }) {
       >
         <CardActionArea>
           <CardContent className={dark ? "service_card_dark" : "service_card"}>
-            <img src={service.icon} alt="icon" />
+            <i className={service.icon}></i>
             <div>
               <Typography gutterBottom variant="h6" component="h2">
                 {service.title}

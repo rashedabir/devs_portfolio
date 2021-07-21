@@ -7,9 +7,7 @@ function ResumeCard({ data, dark }) {
       <Typography variant="h6">
         <h4>{data.title}</h4>
       </Typography>
-      <Typography className={dark && "name_dark"}>
-        {data.name}
-      </Typography>
+      <Typography className={dark && "name_dark"}>{data.name}</Typography>
       <Typography className="details" variant="body2" component="p">
         {data.details}
       </Typography>

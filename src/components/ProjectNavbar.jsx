@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
-function ProjectNavbar({handleFilterCategory, active, dark}) {
-    return (
-        <div
+function ProjectNavbar({ handleFilterCategory, active, dark }) {
+  return (
+    <div
       className={
         dark
           ? "projects_navbar-item_dark text-capitalize"
@@ -42,7 +42,7 @@ function ProjectNavbar({handleFilterCategory, active, dark}) {
         MERN
       </div>
     </div>
-    )
+  );
 }
 
-export default ProjectNavbar
+export default ProjectNavbar;

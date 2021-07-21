@@ -82,7 +82,7 @@ function Resume({ dark }) {
           <Typography>
             <h2>Certificates</h2>
           </Typography>
-          <Grid container spacing={3} style={{marginTop:"1px"}}>
+          <Grid container spacing={3} style={{ marginTop: "1px" }}>
             {CertificateData.map((data) => (
               <CertificateCard dark={dark} data={data} />
             ))}

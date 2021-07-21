@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import service from "../utils/serviceData";
 
 function About({ dark }) {
-
   const navbar_varient = {
     hidden: {
       opacity: 0,
