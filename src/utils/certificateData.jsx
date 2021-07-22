@@ -34,6 +34,14 @@ const CertificateData = [
     heading: "Coursera Certified Build a Python GUI with Tkinter (2020).",
     link: "https://www.coursera.org/account/accomplishments/verify/DJ5TTRBY4VKQ?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=project",
   },
+  {
+    heading: "HackerRank Certified Python (Basic) Certificate (2021).",
+    link: "https://www.hackerrank.com/certificates/6b12ac283ba7",
+  },
+  {
+    heading: "HackerRank Certified React (Basic) Certificate (2021).",
+    link: "https://www.hackerrank.com/certificates/be4cd80353c1",
+  },
 ];
 
 export default CertificateData;
