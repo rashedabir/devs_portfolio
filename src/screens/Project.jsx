@@ -58,11 +58,13 @@ function Project({ dark }) {
       <Container maxWidth="lg" className="projects">
         <Grid container spacing={3} className="projects_bar">
           <Grid item xs={12} lg={8}>
-            <ProjectNavbar
-              active={active}
-              dark={dark}
-              handleFilterCategory={handleFilterCategory}
-            />
+            {search.length ? null : (
+              <ProjectNavbar
+                active={active}
+                dark={dark}
+                handleFilterCategory={handleFilterCategory}
+              />
+            )}
           </Grid>
           <Grid item xs={12} lg={4}>
             <div className={dark ? "project-search_dark" : "project-search"}>
