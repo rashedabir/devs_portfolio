@@ -16,6 +16,10 @@ import dhakalegal from "../assets/projects_images/dhakalegal.png";
 import memegen from "../assets/projects_images/memegen.png";
 import contacts from "../assets/projects_images/contacts.png";
 import doctor from "../assets/projects_images/doctor.png";
+import coursehub from "../assets/projects_images/coursehub.png";
+import bmi from "../assets/projects_images/bmi.png";
+import pace from "../assets/projects_images/pace.png";
+import invoice from "../assets/projects_images/invoice.png";
 
 const projectsData = [
   {
@@ -36,6 +40,14 @@ const projectsData = [
   },
   {
     id: 3,
+    name: "E-Learn Site",
+    image: coursehub,
+    deployed_url: "https://course-hub-bd.herokuapp.com/",
+    github_url: "https://github.com/rashedabir/Course_Hub_Learning_Site",
+    category: ["react.js", "mongodb", "express.js", "node.js"],
+  },
+  {
+    id: 4,
     name: "Expense Tracker",
     image: expense,
     deployed_url: "https://expense-trackerbd.herokuapp.com/",
@@ -43,15 +55,15 @@ const projectsData = [
     category: ["react.js", "mongodb", "express.js", "node.js"],
   },
   {
-    id: 4,
-    name: "Food Recipe Search",
-    image: food,
-    deployed_url: "https://find-recipe55.web.app/",
-    github_url: "https://github.com/rashedabir/food-recipe-search",
-    category: ["react.js"],
+    id: 5,
+    name: "invoice manage system",
+    image: invoice,
+    deployed_url: "https://entkreis.herokuapp.com/",
+    github_url: "https://github.com/rashedabir/invoice_management_system",
+    category: ["react.js", "mongodb", "express.js", "node.js"],
   },
   {
-    id: 5,
+    id: 6,
     name: "Github User Founder",
     image: gitSearch,
     deployed_url: "https://git-searcher-2155.web.app/git-search",
@@ -59,7 +71,7 @@ const projectsData = [
     category: ["react.js"],
   },
   {
-    id: 6,
+    id: 7,
     name: "Party Management System",
     image: party,
     deployed_url: "https://party-managed.herokuapp.com/",
@@ -67,7 +79,7 @@ const projectsData = [
     category: ["react.js", "mongodb", "express.js", "node.js"],
   },
   {
-    id: 7,
+    id: 8,
     name: "CGPA Calculator",
     image: cgpa,
     deployed_url: "https://cgpa-find.web.app/",
@@ -75,7 +87,7 @@ const projectsData = [
     category: ["react.js", "redux"],
   },
   {
-    id: 8,
+    id: 9,
     name: "Movie Flex",
     image: movieapp,
     deployed_url: "https://movie-flex-55.web.app/",
@@ -83,7 +95,7 @@ const projectsData = [
     category: ["react.js", "node.js"],
   },
   {
-    id: 9,
+    id: 10,
     name: "Corona Virus Report",
     image: covid,
     deployed_url: "https://rashedabir.github.io/covid19-report/",
@@ -91,7 +103,7 @@ const projectsData = [
     category: ["react.js", "node.js"],
   },
   {
-    id: 10,
+    id: 11,
     name: "Wee Shop",
     image: weshop,
     deployed_url: "https://weeshop.netlify.app/",
@@ -99,7 +111,7 @@ const projectsData = [
     category: ["react.js"],
   },
   {
-    id: 11,
+    id: 12,
     name: "Power-X",
     image: power,
     deployed_url: "https://power-x55.web.app/",
@@ -107,7 +119,7 @@ const projectsData = [
     category: ["react.js"],
   },
   {
-    id: 12,
+    id: 13,
     name: "dhaka legal practice",
     image: dhakalegal,
     deployed_url: "https://dhaka-legal.web.app/",
@@ -115,7 +127,7 @@ const projectsData = [
     category: ["react.js", "redux"],
   },
   {
-    id: 13,
+    id: 14,
     name: "News Application",
     image: news,
     deployed_url: "https://news360app.herokuapp.com/",
@@ -123,7 +135,7 @@ const projectsData = [
     category: ["react.js", "node.js"],
   },
   {
-    id: 14,
+    id: 15,
     name: "meme generator",
     image: memegen,
     deployed_url: "https://meme-gen55.web.app/",
@@ -131,7 +143,7 @@ const projectsData = [
     category: ["react.js"],
   },
   {
-    id: 15,
+    id: 16,
     name: "Party Managed App",
     image: partymanaged,
     deployed_url: "",
@@ -139,7 +151,7 @@ const projectsData = [
     category: ["java"],
   },
   {
-    id: 16,
+    id: 17,
     name: "contacts book",
     image: contacts,
     deployed_url: "https://contacts-books.web.app/",
@@ -147,7 +159,7 @@ const projectsData = [
     category: ["react.js", "redux"],
   },
   {
-    id: 17,
+    id: 18,
     name: "Doctors Appoinment",
     image: doctor,
     deployed_url: "https://doctor-vai.web.app/",
@@ -155,7 +167,31 @@ const projectsData = [
     category: ["react.js", "redux"],
   },
   {
-    id: 18,
+    id: 19,
+    name: "BMI Calculator",
+    image: bmi,
+    deployed_url: "https://bmi-calculator55.web.app/",
+    github_url: "https://github.com/rashedabir/bmi_calculator",
+    category: ["react.js"],
+  },
+  {
+    id: 20,
+    name: "pace Calculator",
+    image: pace,
+    deployed_url: "https://space-runner55.web.app/",
+    github_url: "https://github.com/rashedabir/smart_pace_calculator",
+    category: ["react.js", "redux"],
+  },
+  {
+    id: 21,
+    name: "Food Recipe Search",
+    image: food,
+    deployed_url: "https://find-recipe55.web.app/",
+    github_url: "https://github.com/rashedabir/food-recipe-search",
+    category: ["react.js"],
+  },
+  {
+    id: 22,
     name: "Library Management System",
     image: library,
     deployed_url: "",
