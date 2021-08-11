@@ -20,6 +20,7 @@ import coursehub from "../assets/projects_images/coursehub.png";
 import bmi from "../assets/projects_images/bmi.png";
 import pace from "../assets/projects_images/pace.png";
 import invoice from "../assets/projects_images/invoice.png";
+import breakingbad from "../assets/projects_images/breakingbad.png";
 
 const projectsData = [
   {
@@ -192,6 +193,14 @@ const projectsData = [
   },
   {
     id: 22,
+    name: "breaking bad Characters",
+    image: breakingbad,
+    deployed_url: "https://thebreakingbad-55.netlify.app/",
+    github_url: "https://github.com/rashedabir/breaking_bad_characters",
+    category: ["react.js"],
+  },
+  {
+    id: 23,
     name: "Library Management System",
     image: library,
     deployed_url: "",
