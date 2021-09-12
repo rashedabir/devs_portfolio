@@ -4,7 +4,7 @@ import rashed from "../assets/images/rashed abir.JPEG";
 import GetAppIcon from "@material-ui/icons/GetApp";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import TwitterIcon from "@material-ui/icons/Twitter";
+import TurnedInIcon from "@material-ui/icons/TurnedIn";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import RoomIcon from "@material-ui/icons/Room";
@@ -100,11 +100,11 @@ function Sidebar({ dark, setDark }) {
             <LinkedInIcon className="icon" />
           </Button>
           <Button
-            href="https://twitter.com/rashedabir_"
+            href="https://github.com/rashedabir"
             target="_blank"
             rel="noreferrer"
           >
-            <TwitterIcon className="icon" />
+            <GitHubIcon className="icon" style={{ fontSize: "31px" }} />
           </Button>
           <Button
             href="https://www.instagram.com/rashedabir_"
@@ -115,8 +115,8 @@ function Sidebar({ dark, setDark }) {
           </Button>
         </div>
         <div className={dark ? "info_dark" : "info"}>
-          <Button href="https://github.com/rashedabir" target="_blank">
-            <GitHubIcon className="icon" /> <h4>github</h4>
+          <Button href="https://codeblogs-tech.web.app/" target="_blank">
+            <TurnedInIcon className="icon" /> <h4>blogs</h4>
           </Button>
           <Button href="https://g.page/rashed-abir?share" target="_blank">
             <RoomIcon className="icon" /> <h4>Comilla, Bangladesh</h4>

@@ -1,9 +1,7 @@
 import { Container, Grid, Typography } from "@material-ui/core";
 import React from "react";
 import Bar from "../components/Bar";
-import CertificateCard from "../components/CertificateCard";
 import ResumeCard from "../components/ResumeCard";
-import CertificateData from "../utils/certificateData";
 import educationData from "../utils/educationData";
 import experienceData from "../utils/experienceData";
 import languages from "../utils/languageData";
@@ -78,16 +76,6 @@ function Resume({ dark }) {
             </div>
           </Grid>
         </Grid>
-        <div className="certificate">
-          <Typography>
-            <h2>Certificates</h2>
-          </Typography>
-          <Grid container spacing={3} style={{ marginTop: "1px" }}>
-            {CertificateData.map((data) => (
-              <CertificateCard dark={dark} data={data} />
-            ))}
-          </Grid>
-        </div>
       </Container>
     </motion.div>
   );

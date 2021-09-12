@@ -1,5 +1,5 @@
 import { Container, Grid } from "@material-ui/core";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Sidebar from "./screens/Sidebar";
 import {
@@ -15,6 +15,15 @@ import Project from "./screens/Project";
 
 function App() {
   const [dark, setDark] = useState(false);
+  const hours = new Date().getHours();
+
+  useEffect(() => {
+    if (hours > 7 && hours < 18) {
+      setDark(false);
+    } else {
+      setDark(true);
+    }
+  }, [hours]);
 
   return (
     <Router>
