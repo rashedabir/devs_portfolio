@@ -4,7 +4,7 @@ import party from "../assets/projects_images/party.png";
 import movieapp from "../assets/projects_images/movieapp.png";
 import covid from "../assets/projects_images/covid.png";
 import weshop from "../assets/projects_images/weshop.png";
-import news from "../assets/projects_images/news-app.png";
+import diu from "../assets/projects_images/diu.png";
 import ainews from "../assets/projects_images/ai-news.png";
 import gitSearch from "../assets/projects_images/git-search.png";
 import partymanaged from "../assets/projects_images/partymanaged.png";
@@ -147,10 +147,10 @@ const projectsData = [
   },
   {
     id: 16,
-    name: "News Application",
-    image: news,
-    deployed_url: "https://news360app.herokuapp.com/",
-    github_url: "https://github.com/rashedabir/news_app",
+    name: "DIU academic result",
+    image: diu,
+    deployed_url: "https://diu-result.web.app/",
+    github_url: "https://github.com/rashedabir/diu_academic_result",
     category: ["react.js", "node.js"],
   },
   {
