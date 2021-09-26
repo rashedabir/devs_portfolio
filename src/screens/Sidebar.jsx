@@ -138,7 +138,7 @@ function Sidebar({ dark, setDark }) {
           </Button>
         </div>
         <div className="hire_button">
-          <Button href="https://www.fiverr.com/rashedkhan126" target="_blank">
+          <Button href="https://www.fiverr.com/share/DdGrQN" target="_blank">
             <h3>hire me</h3>
           </Button>
         </div>
