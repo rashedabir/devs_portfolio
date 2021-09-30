@@ -14,12 +14,12 @@ const languages = [
   {
     icon: python,
     name: "Python",
-    level: "55",
+    level: "45",
   },
   {
     icon: java,
     name: "Java",
-    level: "70",
+    level: "50",
   },
   {
     icon: js,
@@ -29,7 +29,7 @@ const languages = [
   {
     icon: c,
     name: "C Programme",
-    level: "85",
+    level: "60",
   },
   {
     icon: react,
@@ -39,12 +39,12 @@ const languages = [
   {
     icon: node,
     name: "Node JS",
-    level: "55",
+    level: "65",
   },
   {
     icon: materia,
     name: "MaterialUI",
-    level: "68",
+    level: "65",
   },
   {
     icon: html,
@@ -58,18 +58,18 @@ const languages = [
   },
   {
     icon: bootstrap,
-    name: "Bootstrap 4",
-    level: "60",
+    name: "Bootstrap",
+    level: "75",
   },
   {
     icon: redux,
     name: "React-Redux",
-    level: "62",
+    level: "55",
   },
   {
     icon: js,
     name: "Express JS",
-    level: "72",
+    level: "70",
   },
 ];
 

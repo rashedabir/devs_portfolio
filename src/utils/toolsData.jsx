@@ -12,12 +12,12 @@ const tools = [
   {
     icon: gitw,
     name: "Git",
-    level: "77",
+    level: "70",
   },
   {
     icon: cam,
     name: "Camtacia",
-    level: "85",
+    level: "80",
   },
   {
     icon: filmora,
@@ -52,7 +52,7 @@ const tools = [
   {
     icon: android,
     name: "android studio",
-    level: "67",
+    level: "55",
   },
 ];
 
