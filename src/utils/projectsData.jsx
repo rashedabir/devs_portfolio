@@ -38,7 +38,7 @@ const projectsData = [
     name: "MERN E-Commerce Site",
     image: mern_ecommerce,
     deployed_url: "https://we-shop-bd.web.app/",
-    github_url: "https://github.com/rashedabir/ecommerce_site",
+    github_url: "https://github.com/rashedabir/MERN_E-Commerce_System",
     category: ["react.js", "mongodb", "express.js", "node.js"],
   },
   {
@@ -46,7 +46,7 @@ const projectsData = [
     name: "E-Learn Site",
     image: coursehub,
     deployed_url: "https://coursehub-bd.web.app/",
-    github_url: "https://github.com/rashedabir/Course_Hub_Learning_Site",
+    github_url: "https://github.com/rashedabir/MERN_E-Learning_System",
     category: ["react.js", "mongodb", "express.js", "node.js"],
   },
   {
@@ -62,7 +62,7 @@ const projectsData = [
     name: "invoice manage system",
     image: invoice,
     deployed_url: "https://entkreis.herokuapp.com/",
-    github_url: "https://github.com/rashedabir/invoice_management_system",
+    github_url: "https://github.com/rashedabir/MERN_Invoice_Management_System",
     category: ["react.js", "mongodb", "express.js", "node.js"],
   },
   {
@@ -70,7 +70,7 @@ const projectsData = [
     name: "blog site",
     image: blog,
     deployed_url: "https://codeblogs-tech.web.app/",
-    github_url: "https://github.com/rashedabir/code_blogs",
+    github_url: "https://github.com/rashedabir/MERN_Code_Blogs",
     category: ["react.js", "mongodb", "express.js", "node.js"],
   },
   {
@@ -78,7 +78,7 @@ const projectsData = [
     name: "food order system",
     image: foodOrder,
     deployed_url: "https://hungry-naki.web.app/",
-    github_url: "https://github.com/rashedabir/food_order_system",
+    github_url: "https://github.com/rashedabir/MERN_Food_Order_System",
     category: ["react.js", "mongodb", "express.js", "node.js"],
   },
   {
