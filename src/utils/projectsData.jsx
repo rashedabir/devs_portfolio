@@ -23,6 +23,7 @@ import invoice from "../assets/projects_images/invoice.png";
 import breakingbad from "../assets/projects_images/breakingbad.png";
 import blog from "../assets/projects_images/blogs.png";
 import foodOrder from "../assets/projects_images/foodOrder.png";
+import shopClues from "../assets/projects_images/shop clues.png";
 
 const projectsData = [
   {
@@ -67,6 +68,14 @@ const projectsData = [
   },
   {
     id: 6,
+    name: "multivendor e-commerce",
+    image: shopClues,
+    deployed_url: "https://shop-clues.web.app/",
+    github_url: "https://github.com/rashedabir/MERN_Multivendor_E-Commerce",
+    category: ["react.js", "mongodb", "express.js", "node.js"],
+  },
+  {
+    id: 7,
     name: "blog site",
     image: blog,
     deployed_url: "https://codeblogs-tech.web.app/",
@@ -74,7 +83,7 @@ const projectsData = [
     category: ["react.js", "mongodb", "express.js", "node.js"],
   },
   {
-    id: 7,
+    id: 8,
     name: "food order system",
     image: foodOrder,
     deployed_url: "https://hungry-naki.web.app/",
@@ -82,7 +91,7 @@ const projectsData = [
     category: ["react.js", "mongodb", "express.js", "node.js"],
   },
   {
-    id: 8,
+    id: 9,
     name: "Github User Founder",
     image: gitSearch,
     deployed_url: "https://git-searcher-2155.web.app/git-search",
@@ -90,7 +99,7 @@ const projectsData = [
     category: ["react.js"],
   },
   {
-    id: 9,
+    id: 10,
     name: "Party Management System",
     image: party,
     deployed_url: "https://party-managed.herokuapp.com/",
@@ -98,7 +107,7 @@ const projectsData = [
     category: ["react.js", "mongodb", "express.js", "node.js"],
   },
   {
-    id: 10,
+    id: 11,
     name: "CGPA Calculator",
     image: cgpa,
     deployed_url: "https://cgpa-find.web.app/",
@@ -106,7 +115,7 @@ const projectsData = [
     category: ["react.js", "redux"],
   },
   {
-    id: 11,
+    id: 12,
     name: "Movie Flex",
     image: movieapp,
     deployed_url: "https://movie-flex-55.web.app/",
@@ -114,7 +123,7 @@ const projectsData = [
     category: ["react.js", "node.js"],
   },
   {
-    id: 12,
+    id: 13,
     name: "Corona Virus Report",
     image: covid,
     deployed_url: "https://rashedabir.github.io/covid19-report/",
@@ -122,7 +131,7 @@ const projectsData = [
     category: ["react.js", "node.js"],
   },
   {
-    id: 13,
+    id: 14,
     name: "Wee Shop",
     image: weshop,
     deployed_url: "https://weeshop.netlify.app/",
@@ -130,7 +139,7 @@ const projectsData = [
     category: ["react.js"],
   },
   {
-    id: 14,
+    id: 15,
     name: "Power-X",
     image: power,
     deployed_url: "https://power-x55.web.app/",
@@ -138,7 +147,7 @@ const projectsData = [
     category: ["react.js"],
   },
   {
-    id: 15,
+    id: 16,
     name: "dhaka legal practice",
     image: dhakalegal,
     deployed_url: "https://dhaka-legal.web.app/",
@@ -146,7 +155,7 @@ const projectsData = [
     category: ["react.js", "redux"],
   },
   {
-    id: 16,
+    id: 17,
     name: "DIU academic result",
     image: diu,
     deployed_url: "https://diu-result.web.app/",
@@ -154,7 +163,7 @@ const projectsData = [
     category: ["react.js", "node.js"],
   },
   {
-    id: 17,
+    id: 18,
     name: "meme generator",
     image: memegen,
     deployed_url: "https://meme-gen55.web.app/",
@@ -162,7 +171,7 @@ const projectsData = [
     category: ["react.js"],
   },
   {
-    id: 18,
+    id: 19,
     name: "Party Managed App",
     image: partymanaged,
     deployed_url: "",
@@ -170,7 +179,7 @@ const projectsData = [
     category: ["java"],
   },
   {
-    id: 19,
+    id: 20,
     name: "contacts book",
     image: contacts,
     deployed_url: "https://contacts-books.web.app/",
@@ -178,7 +187,7 @@ const projectsData = [
     category: ["react.js", "redux"],
   },
   {
-    id: 20,
+    id: 21,
     name: "Doctors Appoinment",
     image: doctor,
     deployed_url: "https://doctor-vai.web.app/",
@@ -186,7 +195,7 @@ const projectsData = [
     category: ["react.js", "redux"],
   },
   {
-    id: 21,
+    id: 22,
     name: "BMI Calculator",
     image: bmi,
     deployed_url: "https://bmi-calculator55.web.app/",
@@ -194,7 +203,7 @@ const projectsData = [
     category: ["react.js"],
   },
   {
-    id: 22,
+    id: 23,
     name: "pace Calculator",
     image: pace,
     deployed_url: "https://space-runner55.web.app/",
@@ -202,7 +211,7 @@ const projectsData = [
     category: ["react.js", "redux"],
   },
   {
-    id: 23,
+    id: 24,
     name: "Food Recipe Search",
     image: food,
     deployed_url: "https://find-recipe55.web.app/",
@@ -210,7 +219,7 @@ const projectsData = [
     category: ["react.js"],
   },
   {
-    id: 24,
+    id: 25,
     name: "breaking bad Characters",
     image: breakingbad,
     deployed_url: "https://thebreakingbad-55.netlify.app/",
@@ -218,7 +227,7 @@ const projectsData = [
     category: ["react.js"],
   },
   {
-    id: 25,
+    id: 26,
     name: "Library Management System",
     image: library,
     deployed_url: "",
