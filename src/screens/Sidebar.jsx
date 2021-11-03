@@ -11,7 +11,7 @@ import RoomIcon from "@material-ui/icons/Room";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneIphoneIcon from "@material-ui/icons/PhoneIphone";
 import Typed from "react-typed";
-import aburashedkhan from "../assets/aburashedkhan.pdf";
+import aburashedkhan from "../assets/Abu Rashed Khan_(CV).pdf";
 import { motion } from "framer-motion";
 
 function Sidebar({ dark, setDark }) {
@@ -77,7 +77,7 @@ function Sidebar({ dark, setDark }) {
           </Button>
         </div>
         <div className={dark ? "resume_dark" : "resume"}>
-          <Button href={aburashedkhan} download="aburashedkhan.pdf">
+          <Button href={aburashedkhan} download="Abu Rashed Khan_(CV).pdf">
             <Typography className="d-flex">
               <GetAppIcon className="icon" />
               <h4>Download Resume</h4>

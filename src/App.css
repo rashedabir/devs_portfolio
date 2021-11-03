@@ -4,8 +4,6 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-image: linear-gradient(120deg, #2980b9, #8e44ad);
-  background-attachment: fixed;
 
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -27,12 +25,14 @@ a {
 }
 
 .App {
-  padding: 46px 10px;
+  padding: 48px 10px;
+  background-image: linear-gradient(120deg, #2980b9, #8e44ad);
+  background-attachment: fixed;
 }
 .App_dark {
   background-color: #202024;
   background-attachment: fixed;
-  padding: 46px 10px;
+  padding: 48px 10px;
 }
 
 .app_content {
