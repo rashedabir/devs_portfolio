@@ -119,7 +119,7 @@ function Sidebar({ dark, setDark }) {
             <TurnedInIcon className="icon" /> <h4>blogs</h4>
           </Button>
           <Button href="https://g.page/rashed-abir?share" target="_blank">
-            <RoomIcon className="icon" /> <h4>Comilla, Bangladesh</h4>
+            <RoomIcon className="icon" /> <h4>Dhaka, Bangladesh</h4>
           </Button>
           <Button onClick={handleEmail}>
             <EmailIcon className="icon" /> <h4>rashedabir.cse@gmail.com</h4>
