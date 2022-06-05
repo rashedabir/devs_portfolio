@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+html,
 body {
   font-family: "Poppins", sans-serif;
 
@@ -11,6 +12,7 @@ body {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently */
+  height: 100%;
 }
 a {
   text-decoration: none;
@@ -25,14 +27,18 @@ a {
 }
 
 .App {
-  padding: 48px 10px;
+  padding: 60px 10px;
   background-image: linear-gradient(120deg, #2980b9, #8e44ad);
   background-attachment: fixed;
+  height: auto !important;
+  min-height: 100%;
 }
 .App_dark {
   background-color: #202024;
   background-attachment: fixed;
-  padding: 48px 10px;
+  padding: 60px 10px;
+  height: auto !important;
+  min-height: 100%;
 }
 
 .app_content {
@@ -61,7 +67,7 @@ a {
   padding: 15px 0;
 }
 .sidebar_left img {
-  width: 145px;
+  width: 197px;
   border-radius: 50%;
   border: 4px solid #4f69b4;
 }
