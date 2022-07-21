@@ -12,7 +12,7 @@ body {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently */
-  height: 100%;
+  height: 100vh;
 }
 a {
   text-decoration: none;
@@ -27,24 +27,26 @@ a {
 }
 
 .App {
-  padding: 60px 10px;
   background-image: linear-gradient(120deg, #2980b9, #8e44ad);
   background-attachment: fixed;
-  height: auto !important;
-  min-height: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  height: 100vh;
 }
 .App_dark {
   background-color: #202024;
   background-attachment: fixed;
-  padding: 60px 10px;
-  height: auto !important;
-  min-height: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  height: 100vh;
 }
 
 .app_content {
-  height: 100%;
+  height: 800px;
+  min-height: 800px;
   gap: 20px;
-  padding: 0 10px;
 }
 
 /*----------------------------------------sidebar----------------------------------------*/
@@ -250,12 +252,14 @@ a {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(26, 25, 25);
+  height: 100%;
 }
 .main_dark {
   background-color: #0f1115;
   color: white;
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(26, 25, 25);
+  height: 100%;
 }
 
 /*--------------------------navbar-------------------------------*/
@@ -325,7 +329,7 @@ a {
 
 .about_intro {
   overflow-y: auto;
-  height: 78vh;
+  height: 68vh;
 }
 .about_intro h4 {
   padding: 20px 10px;
@@ -376,8 +380,8 @@ a {
 
 .resume_component {
   flex-grow: 1;
-  height: 78vh;
-  overflow-y: auto;
+  height: 68vh;
+  overflow-y: auto !important;
 }
 .resume_component h2 {
   padding: 10px;
@@ -479,7 +483,7 @@ a {
 
 .projects {
   flex-grow: 1;
-  height: 78vh;
+  height: 68vh;
   overflow-y: auto;
   padding: 15px 0;
 }
